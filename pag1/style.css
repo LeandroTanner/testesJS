@@ -1,0 +1,77 @@
+.div-pai {
+    background-color: red;
+    display: flex;
+    max-height: 70%; /* Alteração para 70% */
+    max-width: 100vw;
+    padding: 0.5rem 0.5rem;
+}
+
+.div-mae {
+    background-color: blue; /* Alteração da cor para ilustrar */
+    max-width: 100vw;
+    height: 30%; /* Adição da altura para 30% */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1rem 2rem;
+}
+
+.div-1 {
+    background-color: rgb(19, 255, 235);
+    width: 30%;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-2 {
+    background-color: green;
+    width: 70%;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.div-teste{
+    background-color: yellow;
+    margin: 0.5rem 0.5rem;
+    padding: 0.5rem 0.5rem;
+    width: 80%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@media screen and (max-width: 730px) {
+    
+    .div-pai{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .div-1{
+        width: 100%;
+        height: auto; /* Alteração da altura para se ajustar ao conteúdo */
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+    .div-2{
+        width: 100%;
+        height: auto; /* Alteração da altura para se ajustar ao conteúdo */
+    }
+
+    .div-teste{
+        width: 80%; /* Alteração da largura para ocupar 100% da largura da tela */
+        height: auto; /* Alteração da altura para se ajustar ao conteúdo */
+        overflow: auto;
+    }
+
+}

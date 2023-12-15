@@ -1,0 +1,309 @@
+*{
+    box-sizing: border-box;
+}
+
+.site{
+
+    min-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/*COMEÇO NAVBAR*/
+
+header{
+    background-color: #24252a;
+    box-shadow: 0px 3px 10px #464646;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 6rem;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo h1{
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.nav-list{
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.nav-item{
+    margin: 0 15px;
+    transition: 0.5s;
+}
+
+.nav-item:hover{
+    scale: 1.1;
+    border-bottom: 2px solid #0187a7;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: white;
+    font-size: 1.15rem;
+    font-weight: 400;
+}
+
+.btn-login{
+    display: flex;
+    align-items: center;
+}
+
+.btn-login button{
+    border: none;
+    background-color: #0187a7;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn-login button:hover{
+    scale: 1.05;
+    border: 0.5px solid white;
+    border-radius: 5px;
+    box-shadow: 0px 3px 10px #464646;
+}
+
+.btn-login button a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+
+.icone-menu-mobile{
+    display: none;
+}
+
+.menu-mobile{
+    display: none;
+}
+
+@media screen and (max-width: 730px) {
+
+    .navbar{
+        padding: 0.5rem 4rem;
+    }
+
+    .nav-item{
+        display: none;
+    }
+    
+    .btn-login{
+        display: none;
+    }
+
+    .icone-menu-mobile{
+        display: flex;
+        align-items: center;
+    }
+
+    .icone-menu-mobile button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .icone{
+        color: white;
+        font-size: 1.5rem;
+    }
+
+    .icone-fechado{
+        display: flex;
+    }
+
+    .icone-aberto{
+        display: none;
+    }
+
+    .menu-mobile{
+        transition: 0.5s ease;
+    }
+
+    .menu-mobile ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+    }
+
+    .menu-mobile .nav-item{
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+    .menu-mobile .btn-login{
+        display: flex;
+        justify-content: center;
+        padding: 1rem 2rem;
+
+    }
+
+    .menu-mobile .btn-login button{
+        width: 95%;
+    }
+
+    .aberto{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-item{
+        border: 0;
+    }
+
+    .nav-item:hover{
+        border: 0;
+    }
+
+    .nav-link{
+        transition: 0.3s;
+    }
+
+    .nav-link:hover{
+        color: #0187a7;
+        font-style: bold;
+        font-weight: 600;
+    }
+
+}
+
+/*FIM NAVBAR*/
+
+/*COMEÇO CONTEUDO*/
+
+.container{
+    flex-grow: 1;
+}
+
+/*FIM CONTEUDO*/
+
+/*COMEÇO FOOTER*/
+
+.footer{
+    background-color: #636363;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.redes-site{
+    padding: 0.5rem 2rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.redes-site ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.redeSite-item {
+    margin: 0 10px;
+    padding: 0;
+}
+
+.redeSite-link {
+    margin-top: 0.5rem;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.icones-redes {
+    font-size: 1.5rem;
+}
+
+.cp-footer{
+    padding: 0.5rem 2rem;
+    flex-direction: column;
+}
+
+
+.copy-list{
+    padding: 0;
+}
+
+.copy-list ul{
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+.copy-link{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.ajuda ul{
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+.ajuda-link{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+.at-list{
+    padding: 0.5rem 2rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.at-list ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.at-item {
+    margin: 0 10px;
+    padding: 0;
+}
+
+.at-link {
+    margin-top: 0.5rem;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/*FIM FOOTER*/
